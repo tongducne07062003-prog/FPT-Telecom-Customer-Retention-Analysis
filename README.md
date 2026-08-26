@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/31446045/README.md)# 📡 FPT Telecom Customer Retention & Upsell Analysis
+[README.md] 📡 FPT Telecom Customer Retention & Upsell Analysis
 
 > Business Analysis + Data Analytics Portfolio Project  
 > **Tống Anh Đức** | Business Analyst Intern / Junior  
