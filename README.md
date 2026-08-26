@@ -114,7 +114,8 @@ FPT-Telecom-Customer-Retention-Analysis/
 
 ## 🖼️ Dashboard Preview
 
-<image-card alt="Dashboard" src="03_dashboard/dashboard_preview.png" ></image-card>
+<img width="2084" height="1475" alt="dashboard_preview" src="https://github.com/user-attachments/assets/89884e29-e71b-4ca0-bcfb-c47ec4c8c372" />
+
 
 - **Page 1:** Overview – Tổng quan Churn Risk & Upsell Opportunity
 - **Page 2:** Segment Detail – Drill-down theo gói cước, thời gian sử dụng
