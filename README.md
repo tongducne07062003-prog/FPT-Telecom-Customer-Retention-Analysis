@@ -1,4 +1,4 @@
-[README.md] 📡 FPT Telecom Customer Retention & Upsell Analysis
+ 📡 FPT Telecom Customer Retention & Upsell Analysis
 
 > Business Analysis + Data Analytics Portfolio Project  
 > **Tống Anh Đức** | Business Analyst Intern / Junior  
@@ -143,7 +143,7 @@ FPT-Telecom-Customer-Retention-Analysis/
    )
    SELECT * FROM customer_metrics;
    ```
-<image-card alt="Dashboard" src="03_dashboard/dashboard_preview.png" ></image-card>
+
 3. **Đọc báo cáo**  
    - File Business Insight Report trong `04_report/`.
 
