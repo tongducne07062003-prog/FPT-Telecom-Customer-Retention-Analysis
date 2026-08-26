@@ -3,7 +3,7 @@
 > Business Analysis + Data Analytics Portfolio Project  
 > **Tống Anh Đức** | Business Analyst Intern / Junior  
 > 📧 tongducne07062003@gmail.com  
-> 🔗 LinkedIn: linkedin.com/in/tong-anh-duc | GitHub: github.com/tongducne
+> 🔗 LinkedIn: linkedin.com/in/tong-anh-duc | GitHub: github.com/tongducne07062003-prog
 
 ---
 
