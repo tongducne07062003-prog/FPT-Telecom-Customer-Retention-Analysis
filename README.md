@@ -1,72 +1,73 @@
- 📡 FPT Telecom Customer Retention & Upsell Analysis
 
-> Business Analysis + Data Analytics Portfolio Project  
+# 📡 FPT Telecom – Phân tích Giữ chân & Upsell Khách hàng
+
+> Dự án Portfolio: Business Analysis + Data Analytics  
 > **Tống Anh Đức** | Business Analyst Intern / Junior  
 > 📧 tongducne07062003@gmail.com  
 > 🔗 LinkedIn: linkedin.com/in/tong-anh-duc | GitHub: github.com/tongducne07062003-prog
 
 ---
 
-## 📊 Project Overview
+## 📊 Tổng quan dự án
 
-Phân tích hành vi và nguy cơ hủy dịch vụ của **18.000+ khách hàng** Internet / Truyền hình / Camera tại FPT Telecom (dựa trên dữ liệu thực tế từ quá trình tư vấn & chăm sóc khách hàng).
+Phân tích hành vi và nguy cơ hủy dịch vụ của **18.000+ khách hàng** Internet / Truyền hình / Camera tại FPT Telecom (dựa trên dữ liệu mô phỏng từ quá trình tư vấn & chăm sóc khách hàng).
 
-Mục tiêu: Xác định nhóm khách hàng có nguy cơ **Churn** cao và nhóm có tiềm năng **Upsell** (Camera / Combo), từ đó đề xuất kịch bản chăm sóc và chiến lược giữ chân / bán thêm.
+Mục tiêu: Xác định nhóm khách hàng có nguy cơ **hủy dịch vụ (Churn)** cao và nhóm có tiềm năng **bán thêm (Upsell)** Camera / Combo, từ đó đề xuất kịch bản chăm sóc và chiến lược giữ chân / bán kèm.
 
-### 🎯 Key Highlights
+### 🎯 Điểm nổi bật
 
-| Metric                        | Value                  | Note                     |
-|-------------------------------|------------------------|--------------------------|
-| 👥 Khách hàng phân tích       | 18.000+                | Internet + TV + Camera   |
-| 📉 Tỷ lệ hủy ước tính (nhóm rủi ro) | ~2.3× cao hơn bình thường | Gói cơ bản >12 tháng    |
-| 📈 Tiềm năng tăng Retention   | 15–18%                 | Nếu triển khai đề xuất   |
-| 🛠️ Công cụ chính              | Excel, SQL, Tableau Public | Dashboard tương tác     |
+| Chỉ số | Giá trị | Ghi chú |
+|--------|---------|---------|
+| 👥 Khách hàng phân tích | 18.000+ | Internet + TV + Camera |
+| 📉 Tỷ lệ hủy (nhóm rủi ro) | ~2.3× cao hơn bình thường | Gói cơ bản >12 tháng |
+| 📈 Tiềm năng tăng Retention | 15–18% | Nếu triển khai đề xuất |
+| 🛠️ Công cụ chính | Excel, SQL, Tableau Public | Dashboard tương tác |
 
 ---
 
-## 🎯 Business Problem
+## 🎯 Vấn đề nghiệp vụ
 
 Tại FPT Telecom, đội ngũ Sales & CSKH đang đối mặt với:
 
 1. **Khách hàng dùng gói cơ bản lâu năm** có xu hướng hủy cao nhưng chưa được chăm sóc đúng cách.
-2. **Thiếu phân khúc rõ ràng** → chiến dịch Facebook Ads và tư vấn còn mang tính “spray and pray”.
+2. **Thiếu phân khúc rõ ràng** → chiến dịch Facebook Ads và tư vấn còn mang tính “rải đều”.
 3. **Cơ hội Upsell Camera/Combo** bị bỏ lỡ vì không biết khách hàng nào sẵn sàng nâng cấp.
 4. KPI cá nhân và team phụ thuộc nhiều vào cảm tính thay vì dữ liệu.
 
-**Goal:** Xây dựng mô hình phân khúc + dashboard theo dõi rủi ro hủy & cơ hội upsell, hỗ trợ Sales ra quyết định hàng tuần.
+**Mục tiêu:** Xây dựng mô hình phân khúc + dashboard theo dõi rủi ro hủy & cơ hội upsell, hỗ trợ Sales ra quyết định hàng tuần.
 
 ---
 
-## 🛠️ Tools & Technologies
+## 🛠️ Công cụ & Công nghệ
 
-| Tool              | Mục đích                              |
-|-------------------|---------------------------------------|
+| Công cụ | Mục đích |
+|---------|----------|
 | **Microsoft Excel** | Làm sạch dữ liệu, Power Query, Pivot |
-| **SQL**           | Phân khúc, Window Functions, CTEs    |
-| **Tableau Public**| Dashboard tương tác (Churn Risk, Conversion, Ads Performance) |
-| **Figma** (optional) | Wireframe dashboard nếu cần         |
+| **SQL** | Phân khúc, Window Functions, CTEs |
+| **Tableau Public** | Dashboard tương tác (Rủi ro hủy, Tỷ lệ chuyển đổi, Hiệu quả Ads) |
+| **Figma** (tùy chọn) | Wireframe dashboard nếu cần |
 
 **Kỹ thuật chính:**
-- RFM đơn giản + Behavioral Scoring
-- Cohort Analysis theo thời gian sử dụng gói
+- RFM đơn giản + điểm hành vi (Behavioral Scoring)
+- Phân tích cohort theo thời gian sử dụng gói
 - Phân tích hiệu quả Facebook Ads theo nhóm khách hàng
 
 ---
 
-## 📁 Project Structure
+## 📁 Cấu trúc dự án
 
 ```
 FPT-Telecom-Customer-Retention-Analysis/
-├── 01_data/                  # Sample cleaned dataset (anonymized)
-├── 02_sql/                   # SQL scripts (segmentation, scoring)
-├── 03_dashboard/             # Tableau workbook + screenshots
-├── 04_report/                # Business Insight Report (PDF/DOCX)
+├── 01_data/                  # Dữ liệu mẫu đã làm sạch (ẩn danh)
+├── 02_sql/                   # Script SQL (phân khúc, scoring)
+├── 03_dashboard/             # File Tableau + ảnh chụp màn hình
+├── 04_report/                # Báo cáo Business Insight
 └── README.md
 ```
 
 ---
 
-## 📊 Key Insights
+## 📊 Insight chính
 
 ### 1️⃣ Nhóm rủi ro hủy cao
 
@@ -84,46 +85,47 @@ FPT-Telecom-Customer-Retention-Analysis/
 
 ---
 
-## 💡 Strategic Recommendations
+## 💡 Đề xuất chiến lược
 
-### Priority 1: Chăm sóc nhóm rủi ro (0–30 ngày)
-- Tự động flag khách hàng “High Churn Risk” trên dashboard.
-- Kịch bản gọi/CSKH: ưu đãi giảm giá 1–2 tháng hoặc tặng tháng Camera trial.
+### Ưu tiên 1: Chăm sóc nhóm rủi ro (0–30 ngày)
+- Tự động đánh dấu khách hàng “Rủi ro hủy cao” trên dashboard.
+- Kịch bản gọi/CSKH: ưu đãi giảm giá 1–2 tháng hoặc tặng tháng Camera dùng thử.
 - Kỳ vọng: giảm tỷ lệ hủy nhóm này 15–20%.
 
-### Priority 2: Upsell có chọn lọc (30–60 ngày)
-- Tập trung vào nhóm “Ready to Upgrade”.
+### Ưu tiên 2: Upsell có chọn lọc (30–60 ngày)
+- Tập trung vào nhóm “Sẵn sàng nâng cấp”.
 - Script tư vấn + landing page riêng trên Facebook.
 - Mục tiêu: tăng tỷ lệ bán kèm Camera 10–15%.
 
-### Priority 3: Dashboard vận hành hàng tuần
-- Sales Leader xem Churn Risk + Conversion Rate mỗi tuần.
+### Ưu tiên 3: Dashboard vận hành hàng tuần
+- Sales Leader xem Rủi ro hủy + Tỷ lệ chuyển đổi mỗi tuần.
 - Điều chỉnh ngân sách Ads theo segment hiệu quả nhất.
 
 ---
 
-## 📈 Expected Impact
+## 📈 Tác động kỳ vọng
 
-| Chỉ số                    | Hiện tại (ước tính) | Mục tiêu sau 3 tháng | Tăng trưởng |
-|---------------------------|---------------------|----------------------|-------------|
-| Retention Rate (nhóm rủi ro) | Baseline            | +15–18%             | 📈         |
-| Upsell Conversion         | Baseline            | +10–15%             | 📈         |
-| Hiệu quả Ads (ROI)        | -                   | Cải thiện rõ rệt    | 📈         |
-
----
-
-## 🖼️ Dashboard Preview
-
-<img width="2084" height="1475" alt="dashboard_preview" src="https://github.com/user-attachments/assets/89884e29-e71b-4ca0-bcfb-c47ec4c8c372" />
-
-
-- **Page 1:** Overview – Tổng quan Churn Risk & Upsell Opportunity
-- **Page 2:** Segment Detail – Drill-down theo gói cước, thời gian sử dụng
-- **Page 3:** Ads Performance – Hiệu quả chiến dịch theo segment
+| Chỉ số | Hiện tại (ước tính) | Mục tiêu sau 3 tháng | Tăng trưởng |
+|--------|---------------------|----------------------|-------------|
+| Retention (nhóm rủi ro) | Baseline | +15–18% | 📈 |
+| Tỷ lệ Upsell | Baseline | +10–15% | 📈 |
+| Hiệu quả Ads (ROI) | - | Cải thiện rõ rệt | 📈 |
 
 ---
 
-## 🚀 How to Use This Project
+## 🖼️ Xem trước Dashboard
+
+<img width="1904" height="1102" alt="figma_style_dashboard" src="https://github.com/user-attachments/assets/1d890b59-c66d-4bb8-940f-424d9059a63f" />
+<img width="2084" height="1475" alt="dashboard_preview" src="https://github.com/user-attachments/assets/d9ab9709-f30d-4306-9612-6f79b62bfe4c" />
+
+
+- **Trang 1:** Tổng quan – Rủi ro hủy & Cơ hội Upsell  
+- **Trang 2:** Chi tiết segment – theo gói cước, thời gian sử dụng  
+- **Trang 3:** Hiệu quả Ads – theo từng nhóm khách hàng  
+
+---
+
+## 🚀 Cách sử dụng dự án
 
 1. **Xem Dashboard**  
    - Mở file Tableau Public trong thư mục `03_dashboard/`  
@@ -145,50 +147,49 @@ FPT-Telecom-Customer-Retention-Analysis/
    ```
 
 3. **Đọc báo cáo**  
-   - File Business Insight Report trong `04_report/`.
+   - File Báo cáo Business Insight trong `04_report/`.
 
 ---
 
-## 📚 Skills Demonstrated
+## 📚 Kỹ năng thể hiện
 
-**Technical**
-- SQL (CTEs, Window Functions cơ bản)
-- Excel Advanced + Power Query
-- Tableau Public (Dashboard Design & Storytelling)
-- Data Cleaning & Anonymization
+**Kỹ thuật**
+- SQL (CTE, Window Functions cơ bản)
+- Excel nâng cao + Power Query
+- Tableau Public (thiết kế dashboard & kể chuyện bằng dữ liệu)
+- Làm sạch & ẩn danh dữ liệu
 
-**Business**
-- Customer Segmentation (RFM + Behavioral)
-- Churn Analysis & Retention Strategy
-- Upsell Opportunity Identification
-- Stakeholder Communication (Sales & CSKH)
+**Nghiệp vụ**
+- Phân khúc khách hàng (RFM + hành vi)
+- Phân tích churn & chiến lược giữ chân
+- Xác định cơ hội upsell
+- Giao tiếp với stakeholder (Sales & CSKH)
 
 ---
 
-## 👨‍💼 About Me
+## 👨‍💼 Về tôi
 
 **Tống Anh Đức** – Business Analyst Intern / Junior  
 
 📧 **Email:** [tongducne07062003@gmail.com](mailto:tongducne07062003@gmail.com)  
 💼 **LinkedIn:** [linkedin.com/in/tong-anh-duc](https://linkedin.com/in/tong-anh-duc)  
-🐙 **GitHub:** [https://github.com/tongducne07062003-prog](https://github.com/tongducne07062003-prog)  
+🐙 **GitHub:** [github.com/tongducne07062003-prog](https://github.com/tongducne07062003-prog)  
 📍 Hà Nội, Việt Nam
 
-**Background:**  
+**Nền tảng:**  
 - Cử nhân Quản trị Kinh doanh (NEU + Dongseo University)  
-- Thực tập / Làm việc tại FPT Telecom (Sales & CSKH)  
+- Kinh nghiệm Sales & CSKH tại FPT Telecom  
 - Đang theo học Thạc sĩ Hệ thống thông tin quản lý – NEU
 
 ---
 
-## 📜 License
+## 📜 Giấy phép
 
-MIT License – Bạn có thể sử dụng cho mục đích học tập và portfolio.
+MIT License – Được phép sử dụng cho mục đích học tập và portfolio.
 
 ---
 
 **⭐ Nếu thấy project hữu ích, hãy cho một star nhé!**  
 **💬 Có câu hỏi? Mở Issue hoặc gửi email trực tiếp.**
 
-Built with ❤️ by Tống Anh Đức | Last Updated: August 2026
-
+Xây dựng với ❤️ bởi Tống Anh Đức | Cập nhật: Tháng 8/2026
