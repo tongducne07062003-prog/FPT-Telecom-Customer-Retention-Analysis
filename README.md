@@ -115,7 +115,6 @@ FPT-Telecom-Customer-Retention-Analysis/
 
 ## 🖼️ Xem trước Dashboard
 
-<img width="1904" height="1102" alt="figma_style_dashboard" src="https://github.com/user-attachments/assets/1d890b59-c66d-4bb8-940f-424d9059a63f" />
 <img width="2084" height="1475" alt="dashboard_preview" src="https://github.com/user-attachments/assets/d9ab9709-f30d-4306-9612-6f79b62bfe4c" />
 
 
