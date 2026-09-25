@@ -10,7 +10,7 @@
 
 ## 📊 Tổng quan dự án
 
-Phân tích hành vi và nguy cơ hủy dịch vụ của **18.000+ khách hàng** Internet / Truyền hình / Camera tại FPT Telecom (dựa trên dữ liệu mô phỏng từ quá trình tư vấn & chăm sóc khách hàng).
+Phân tích hành vi và nguy cơ hủy trên bộ dữ liệu mô phỏng 500 khách hàng (Internet / TV / Combo), thiết kế theo các tình huống thường gặp khi tư vấn & chăm sóc khách hàng.
 
 Mục tiêu: Xác định nhóm khách hàng có nguy cơ **hủy dịch vụ (Churn)** cao và nhóm có tiềm năng **bán thêm (Upsell)** Camera / Combo, từ đó đề xuất kịch bản chăm sóc và chiến lược giữ chân / bán kèm.
 
@@ -18,7 +18,7 @@ Mục tiêu: Xác định nhóm khách hàng có nguy cơ **hủy dịch vụ (C
 
 | Chỉ số | Giá trị | Ghi chú |
 |--------|---------|---------|
-| 👥 Khách hàng phân tích | 18.000+ | Internet + TV + Camera |
+| 👥 Khách hàng phân tích | 500 | Internet + TV + Camera |
 | 📉 Tỷ lệ hủy (nhóm rủi ro) | ~2.3× cao hơn bình thường | Gói cơ bản >12 tháng |
 | 📈 Tiềm năng tăng Retention | 15–18% | Nếu triển khai đề xuất |
 | 🛠️ Công cụ chính | Excel, SQL, Tableau Public | Dashboard tương tác |
