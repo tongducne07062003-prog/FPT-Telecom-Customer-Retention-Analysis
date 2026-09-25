@@ -18,10 +18,13 @@ Mục tiêu: Xác định nhóm khách hàng có nguy cơ **hủy dịch vụ (C
 
 | Chỉ số | Giá trị | Ghi chú |
 |--------|---------|---------|
-| 👥 Khách hàng phân tích | 500 | Internet + TV + Camera |
-| 📉 Tỷ lệ hủy (nhóm rủi ro) | ~2.3× cao hơn bình thường | Gói cơ bản >12 tháng |
-| 📈 Tiềm năng tăng Retention | 15–18% | Nếu triển khai đề xuất |
-| 🛠️ Công cụ chính | Excel, SQL, Tableau Public | Dashboard tương tác |
+| 👥 Số khách trong sample | **500** | File `sample_customer_data.xlsx` |
+| 📉 Tỷ lệ nhãn High-risk | **31.4%** (157/500) | Cột `churn_risk` |
+| 📈 Basic + tenure > 12 tháng | High-risk ~**1.5×** nhóm còn lại | 45.5% vs 29.7% |
+| 📊Tenure trung bình nhóm High | ~**25 tháng** | Nhóm Low/Medium ~14–16 tháng |
+| 🎯Mục tiêu retention (nếu triển khai) | **+15–18%** nhóm rủi ro | Kỳ vọng chiến lược, chưa đo sau go-live |
+| 🛠️ Công cụ | Excel · SQL · Tableau Public | |
+
 
 ---
 
@@ -71,17 +74,45 @@ FPT-Telecom-Customer-Retention-Analysis/
 
 ### 1️⃣ Nhóm rủi ro hủy cao
 
-- Khách hàng dùng **gói cơ bản > 12 tháng** có tỷ lệ hủy **cao gấp 2.3 lần** so với nhóm mới.
-- Nguyên nhân chính: thiếu tương tác sau bán, giá cạnh tranh từ đối thủ, không nhận được ưu đãi giữ chân.
+Trên 500 khách:
+
+| Nhóm | Số khách | Tỷ lệ High-risk |
+|------|----------|-----------------|
+| Internet Basic **và** tenure > 12 tháng | 55 | **45.5%** |
+| Các khách còn lại | 445 | **29.7%** |
+| **Tỷ lệ so sánh** | | **≈ 1.5×** |
+
+- Toàn sample: High **31.4%** · Medium **25.6%** · Low **43.0%**
+- Tenure trung bình: High **~24.9 tháng** (median 25) vs Low/Medium **~15–16 tháng**
+
+**Ý nghĩa:** Nhóm ở lâu, đặc biệt gói Basic, đáng được **flag và chăm trước**, không chờ đến lúc đã có ý định hủy.
 
 ### 2️⃣ Cơ hội Upsell
+| Chỉ số | Giá trị |
+|--------|---------|
+| Điểm upsell trung bình (`upsell_potential_score`) | **~5.2 / 10** |
+| Điểm TB theo risk | High 4.88 · Medium 5.32 · Low **5.44** |
+| Score ≥ 4 | **327/500 (65.4%)** |
+| Trong nhóm score ≥ 4 | Low-risk chiếm **~46%** (nhiều hơn High ~28%) |
 
-- Nhóm khách hàng có **lịch sử thanh toán tốt + phản hồi tích cực** khi tư vấn Camera có tỷ lệ chuyển đổi cao hơn 1.8×.
-- Combo Internet + Camera mang lại AOV cao hơn và giảm churn.
+**Ý nghĩa:** Có nhóm **vẫn ổn định (Low/Medium) nhưng điểm upsell cao** → nên tách playbook:
+
+- High-risk → **giữ chân**
+- Score cao + không High → **upsell chọn lọc**
 
 ### 3️⃣ Hiệu quả Facebook Ads
 
-- Nội dung dựa trên insight (ví dụ: “Ưu đãi giữ chân cho khách >1 năm”) giúp tăng tương tác page **+200%** và đóng góp vào việc đạt **150% KPI** cá nhân.
+**Trong sample (500 khách):**
+
+- `engaged_facebook_ads = Yes`: **~31%**
+- `= No`: **~69%**
+
+**Trong công việc Sales & CSKH tại FPT (trải nghiệm thực tế, không lấy từ file 500 dòng):**
+
+- Theo dõi và điều chỉnh hướng tiếp cận ads / page
+- Trong giai đoạn đo: đạt khoảng **150% KPI** cá nhân và tăng tương tác follow page khoảng **+200%**
+
+Hai lớp này **không gộp thành một finding data** — sample chỉ cho thấy một phần khách có tương tác ads; KPI là kết quả vận hành thực tế.
 
 ---
 
@@ -105,11 +136,12 @@ FPT-Telecom-Customer-Retention-Analysis/
 
 ## 📈 Tác động kỳ vọng
 
-| Chỉ số | Hiện tại (ước tính) | Mục tiêu sau 3 tháng | Tăng trưởng |
-|--------|---------------------|----------------------|-------------|
-| Retention (nhóm rủi ro) | Baseline | +15–18% | 📈 |
-| Tỷ lệ Upsell | Baseline | +10–15% | 📈 |
-| Hiệu quả Ads (ROI) | - | Cải thiện rõ rệt | 📈 |
+| Chỉ số | Hiện trạng (sample / baseline) | Mục tiêu nếu triển khai | Loại |
+|--------|--------------------------------|-------------------------|------|
+| Tỷ lệ High-risk (toàn sample) | **31.4%** | Giảm dần qua care Priority 1 | Theo dõi |
+| Basic + >12 tháng vs phần còn lại | ~**1.5×** High-risk | Thu hẹp khoảng cách | Finding → action |
+| Retention nhóm rủi ro | Baseline | **+15–18%** | Target chiến lược |
+| Upsell trên nhóm score cao | Baseline | **+10–15%** | Target chiến lược |
 
 ---
 
