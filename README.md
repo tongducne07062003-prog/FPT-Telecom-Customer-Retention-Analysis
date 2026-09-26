@@ -1,7 +1,7 @@
 
 # 📡 FPT Telecom – Phân tích Giữ chân & Upsell Khách hàng
 
-> Dự án Portfolio: Business Analysis + Data Analytics  
+> Dự án Portfolio: Business Analysis 
 > **Tống Anh Đức** | Business Analyst Intern 
 > 📧 tongducne07062003@gmail.com  
 > 🔗 LinkedIn: linkedin.com/in/tong-anh-duc | GitHub: github.com/tongducne07062003-prog
