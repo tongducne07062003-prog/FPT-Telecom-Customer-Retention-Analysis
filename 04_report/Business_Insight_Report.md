@@ -22,7 +22,6 @@ Phân tích trên **bộ dữ liệu mô phỏng 500 khách hàng** (Internet / 
 
 **Khuyến nghị:** Tách playbook — **giữ chân** nhóm High-risk (ưu tiên Basic lâu năm); **upsell chọn lọc** nhóm điểm cao nhưng không High. Mục tiêu retention **+15–18%** nhóm rủi ro là **kỳ vọng chiến lược**, chưa đo sau go-live.
 
-> Data trong repo là **mô phỏng / portfolio**, không phải dữ liệu production của FPT Telecom.
 
 ---
 
